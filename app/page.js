@@ -1,4 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import ApiCall from "@/components/ApiCall"
+
+export default function Page() {
+  return (
+    <>
+  <h1>Hello, Next.js!</h1>
+  {<ApiCall/>}
+  </>
+  )
+}
+
+/*
+ import { useEffect, useState } from 'react';
 
 async function getData() {
   const res = await fetch('https://coffey-dev.github.io/json-textos/paginas.json');
@@ -31,9 +43,10 @@ export default function Page() {
     <main>
       <h1>Contenido de paginas.json</h1>
       <div>
-        <p>Hoja: {data.hoja}</p>
-        <p>Texto: {data.texto}</p>
+        <p>Hoja: {data.hoja}</p> 
+        <p className='texto'>Texto:</p> 
       </div>
     </main>
   );
 }
+*/
